@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      String,StringBuffer与StringBuilder的关系
+title:      String,StringBuffer与StringBuilder
 date:       2016-07-06 23:40:10
 summary:    String,StringBuffer与StringBuilder的关系
 categories: jekyll
