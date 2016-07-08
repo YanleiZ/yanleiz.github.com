@@ -1,0 +1,21 @@
+---
+layout:     post
+title:      SQLite插入系统当前时间.md
+date:       2016-06-08 12:02:39
+summary:    SQLite插入系统时间。
+categories: jekyll
+thumbnail: jekyll
+tags:
+ - SQL
+ - SQLite
+ - Android
+---
+
+sqlite 在插入记录时自动记录插入记录时间：
+创建表时加入：
+CREATE TABLE GameRanking(RankingId INTEGER PRIMARY KEY AUTOINCREMENT,score INTEGER,[CreatedTime] playtime NOT NULL DEFAULT CURRENT_TIMESTAMP)
+插入数据后发现不是系统时间而世界时间。
+
+修改成如下：
+CREATE TABLE GameRanking(RankingId INTEGER PRIMARY KEY AUTOINCREMENT,score INTEGER,[CreatedTime] playtime NOT NULL DEFAULT (DATETIME('NOW','LOCALTIME')))
+再次插入数据已经时系统时间了
