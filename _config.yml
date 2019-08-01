@@ -1,5 +1,5 @@
 # Site settings
-highlighter: pygments
+highlighter: rouge
 title: "蒲公英"
 email: yanlei_man@outlook.com
 description: "A dark blog theme for Jekyll."
