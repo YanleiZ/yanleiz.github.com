@@ -7,7 +7,7 @@ baseurl: ""
 url: "http://yanleiz.github.io/"
 title_description: "业精于勤，行成于思"
 title_image: "%E5%A4%B4%E5%83%8F.jpeg"
-google_analytics: "UA-20365477-3"
+google_analytics: "略"
 disqus_account: cartenoire
 github_repository: https://github.com/hashcode12/hashcode12.github.com
 addthis_id: ra-513c6fa83da6ec67
@@ -25,7 +25,8 @@ footer_left: "Made with <i class=\"fa fa-heart\"></i> by <a href=\"https://twitt
 footer_right: "&lt;/&gt; on <a href=\"https://github.com/hashcode12/hashcode12.github.com\">Github</a> &nbsp;<i class=\"fa fa-github-alt\"></i>"
 
 # Build settings
-markdown: redcarpet
+#markdown: redcarpet --修改2019年8月1日
+markdown: kramdown
 redcarpet:
   extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "strikethrough", "superscript"]
 permalink: pretty
